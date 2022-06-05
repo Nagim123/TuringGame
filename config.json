@@ -1,0 +1,22 @@
+{
+    "main_bot" : "Console",
+    "token" : "INSERT TOKEN HERE",
+    "games" : [
+        {
+            "name" : "English server",
+            "passcode" : "eng",
+            "max_turns" : 4,
+            "localization" : "english",
+            "number_of_ai_texts" : 3,
+            "AI" : ["Prokofevich"]
+        },
+        {
+            "name" : "Русский сервер",
+            "passcode" : "rus",
+            "max_turns" : 4,
+            "localization" : "russia",
+            "number_of_ai_texts" : 3,
+            "AI" : ["Prokofevich"]
+        }
+    ]
+}
