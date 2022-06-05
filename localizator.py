@@ -4,6 +4,7 @@ class SupportedLanguages(Enum) :
     RUSSIA = "russia"
     ENGLISH = "english"
 
+
 PHRASE_GAME_START = {"russia":"Игра началась!", "english":"The game has begun!"}
 PHRASE_ASK_FOR_FRAGMENT = {"russia":"Отправьте начало предложения, которое в последствии дополнит второй игрок.","english":"Send the beginning of the sentence, which the second player will later complete."}
 PHRASE_ASK_FOR_FRAGMENT_WAITING = {"russia":"Ожидайте пока второй игрок придумывает для вас часть предложения.","english":"Wait while the second player comes up with part of the sentence for you."}
