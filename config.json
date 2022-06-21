@@ -8,7 +8,9 @@
             "max_turns" : 4,
             "localization" : "english",
             "number_of_ai_texts" : 3,
-            "AI" : ["Prokofevich"]
+            "AI" : ["Prokofevich"],
+            "max_players" : 2,
+            "game_mode" : "dual"
         },
         {
             "name" : "Русский сервер",
@@ -16,7 +18,9 @@
             "max_turns" : 4,
             "localization" : "russia",
             "number_of_ai_texts" : 3,
-            "AI" : ["Prokofevich"]
+            "AI" : ["Prokofevich"],
+            "max_players" : 2,
+            "game_mode" : "dual"
         }
     ]
 }

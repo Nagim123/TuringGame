@@ -1,3 +1,5 @@
+from game_modes.dual_mode import DualGameMode
+from game_options import Options
 from text_generator import TextGenerator
 from AI.prokofevich import Prokofevich
 
@@ -36,8 +38,15 @@ class ConfigFile() :
                     break
             if not found_localization:
                 raise Exception("Unknown localization - " + game["localization"])
+            
+            game_mode = None
+            if game["game_mode"] == "dual" :
+                game_mode = DualGameMode()
+            if not game_mode :
+                raise Exception("Unknown game mode - " + game["game_mode"])
 
-            games.append(Game(game["name"], game["passcode"], game["max_turns"], game["localization"], game["number_of_ai_texts"], text_generators))
+            c_option = Options(game["name"], game["max_turns"], game["max_players"], text_generators,game["number_of_ai_texts"],game["passcode"], game["localization"], game_mode)
+            games.append(Game(c_option))
 
         return games
 

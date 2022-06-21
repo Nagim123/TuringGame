@@ -1,8 +1,9 @@
 from typing import List
 import requests as req
 import json
+from bot import MasterBot
 
-class Prokofevich() :
+class Prokofevich(MasterBot) :
     def __init__(self) -> None:
         self.ai_url = "https://pelevin.gpt.dobro.ai/generate/"
         self.p_length = 30
